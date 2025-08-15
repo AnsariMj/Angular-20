@@ -1,0 +1,49 @@
+<div>
+    <p>att-directive works!</p>
+    <h1>What are Directives in Angular?</h1>
+    <h2>Two types:</h2>
+    <h3>1. Attribute Directive</h3>
+    <ul>
+        <li>ngCalss : Add dynamic class</li>:
+        <li>ngStyle : Add dynamic style</li>
+        <li>ngModal : Open Modal</li>
+    </ul>
+    <h3>2. Structural Directive</h3>
+    <ul>
+        <li>ngIF : Deprecated</li>
+        <li>ngFor : Deprecated</li>
+    </ul>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class=" row">
+    <div class="col-3">
+        <!-- ngClass Example -->
+        <div class="p-3 rounded-sm " [ngClass]="div1ClassName()">
+            Div {{div1ClassName()}}
+        </div>
+    </div>
+    <div class="col-3">
+        <!-- ngStyle Example -->
+        <div class="p-3 rounded-sm " [ngStyle]="{'background-color':isDivGreen== true?'red':'green'}">
+        <!-- <div class="p-3 rounded-sm " [ngStyle]="{'background-color':'red'}"> -->
+            MJ Ansari
+        </div>
+    </div>
+</div>
+<!-- / -->
+<!-- -------------------------------------------------------------------------------------------- -->
+
+<div class=" row">
+    <div class="col-3">
+        <button class=" btn btn-success" (click)="setBgClass('bg-success')">Green</button>
+        <button class=" btn btn-danger" (click)="setBgClass('bg-danger')">Red</button>
+    </div>
+    <div class="col-3">
+        <button class=" btn btn-primary" (click)="toggleDivColor()">Toggle BG Color</button>
+    </div>
+</div>

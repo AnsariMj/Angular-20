@@ -4,6 +4,7 @@ import { App } from './app';
 import { Signal } from './components/signal/signal';
 import { ContrlFlow } from './components/contrl-flow/contrl-flow';
 import { AttDirective } from './components/Directive/att-directive/att-directive';
+import { ComponentLifeCycleEvent } from './components/component-life-cycle-event/component-life-cycle-event';
 
 
 export const routes: Routes = [
@@ -36,6 +37,10 @@ export const routes: Routes = [
     {
         path: 'attr-dir',
         component: AttDirective
+    },
+    {
+        path: 'compLifeCycleEvent',
+        component: ComponentLifeCycleEvent
     },
 
 ];
